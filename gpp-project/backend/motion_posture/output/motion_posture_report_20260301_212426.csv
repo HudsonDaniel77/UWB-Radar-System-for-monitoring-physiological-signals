@@ -1,0 +1,47 @@
+epoch_index,timestamp_start,timestamp_end,motion_type,motion_score,posture_label,posture_confidence,associated_sleep_event
+0,0.001,1.646,Major Movement,0.5182,Unknown,0.929,Motion
+1,0.888,2.356,Major Movement,0.5509,Unknown,0.88,Motion
+2,1.655,3.0,Major Movement,0.5868,Unknown,0.807,Motion
+3,2.356,3.68,Major Movement,0.6218,Unknown,0.661,Motion
+4,3.0,4.444,Major Movement,0.6374,Unknown,0.677,Motion
+5,3.68,5.18,Major Movement,0.6021,Unknown,0.666,Motion
+6,4.448,5.905,Major Movement,0.5874,Unknown,0.659,Motion
+7,5.19,6.609,Major Movement,0.5802,Unknown,0.787,Motion
+8,5.906,7.283,Major Movement,0.5973,Unknown,0.836,Motion
+9,6.613,8.006,Turning,0.6508,Unknown,0.729,Motion
+10,7.3,8.714,Turning,0.6702,Unknown,0.59,Motion
+11,8.021,9.42,Turning,0.6587,Unknown,0.712,Motion
+12,8.718,10.11,Major Movement,0.633,Unknown,0.828,Motion
+13,9.421,10.801,Major Movement,0.6185,Unknown,0.863,Motion
+14,10.114,11.493,Major Movement,0.6139,Unknown,0.86,Motion
+15,10.805,12.18,Major Movement,0.6096,Unknown,0.847,Motion
+16,11.493,12.864,Major Movement,0.6071,Unknown,0.847,Motion
+17,12.181,13.513,Major Movement,0.6154,Unknown,0.787,Motion
+18,12.866,14.178,Major Movement,0.6265,Unknown,0.804,Motion
+19,13.515,14.818,Major Movement,0.6368,Unknown,0.866,Motion
+20,14.182,15.466,Major Movement,0.6429,Unknown,0.892,Motion
+21,14.818,16.116,Major Movement,0.6296,Unknown,0.902,Motion
+22,15.47,16.75,Major Movement,0.6201,Unknown,0.918,Motion
+23,16.12,17.406,Major Movement,0.6234,Unknown,0.874,Motion
+24,16.755,18.065,Major Movement,0.6305,Unknown,0.873,Motion
+25,17.41,18.719,Major Movement,0.6376,Unknown,0.858,Motion
+26,18.066,19.339,Major Movement,0.6418,Unknown,0.828,Motion
+27,18.733,19.98,Major Movement,0.6415,Unknown,0.827,Motion
+28,19.34,20.597,Major Movement,0.6308,Unknown,0.898,Motion
+29,19.98,21.237,Major Movement,0.6334,Unknown,0.887,Motion
+30,20.605,21.861,Major Movement,0.6472,Unknown,0.77,Motion
+31,21.238,22.502,Major Movement,0.645,Unknown,0.67,Motion
+32,21.87,23.138,Major Movement,0.6406,Unknown,0.823,Motion
+33,22.508,23.757,Major Movement,0.6489,Unknown,0.856,Motion
+34,23.139,24.385,Turning,0.6661,Unknown,0.799,Motion
+35,23.759,25.03,Turning,0.6663,Unknown,0.727,Motion
+36,24.388,25.654,Turning,0.6544,Unknown,0.799,Motion
+37,25.03,26.3,Turning,0.6586,Unknown,0.775,Motion
+38,25.659,26.937,Turning,0.6594,Unknown,0.749,Motion
+39,26.314,27.59,Major Movement,0.6437,Unknown,0.815,Motion
+40,26.945,28.277,Major Movement,0.6328,Unknown,0.825,Motion
+41,27.602,28.929,Major Movement,0.6447,Unknown,0.802,Motion
+42,28.283,29.561,Turning,0.6532,Unknown,0.812,Motion
+43,28.93,30.215,Turning,0.6568,Unknown,0.829,Motion
+44,29.568,31.195,Turning,0.6711,Unknown,0.687,Motion
+45,30.215,36.86,Turning,0.6616,Unknown,0.7,Motion

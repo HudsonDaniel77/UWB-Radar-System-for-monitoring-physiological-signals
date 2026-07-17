@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-03-01T22:40:05.217570",
+  "summary": {
+    "total_duration_sec": 121.58,
+    "total_epochs": 1,
+    "baseline_amplitude": 0.227,
+    "amplitude_threshold": 0.1589,
+    "event_counts": {
+      "Normal": 0,
+      "Irregular": 0,
+      "Apnea": 0,
+      "Motion": 1
+    },
+    "event_time_sec": {
+      "Normal": 0.0,
+      "Irregular": 0.0,
+      "Apnea": 0.0,
+      "Motion": 30.0
+    },
+    "apnea_events_per_hour": 0.0,
+    "severity": "Normal"
+  },
+  "events": [
+    {
+      "epoch_index": 0,
+      "timestamp_start": 0.034,
+      "timestamp_end": 121.619,
+      "event_type": "Motion",
+      "RR_mean": 0.1672,
+      "RR_std": 0.143,
+      "amplitude": 0.6592,
+      "motion_score_mean": 0.1699,
+      "HR_mean": 79.94
+    }
+  ]
+}

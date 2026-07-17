@@ -1,0 +1,95 @@
+{
+  "generated_at": "2026-02-28T09:00:58.959986",
+  "summary": {
+    "total_duration_sec": 119.95,
+    "total_epochs": 7,
+    "baseline_amplitude": 0.1535,
+    "amplitude_threshold": 0.1074,
+    "event_counts": {
+      "Normal": 0,
+      "Irregular": 0,
+      "Apnea": 0,
+      "Motion": 7
+    },
+    "event_time_sec": {
+      "Normal": 0.0,
+      "Irregular": 0.0,
+      "Apnea": 0.0,
+      "Motion": 210.0
+    },
+    "apnea_events_per_hour": 0.0,
+    "severity": "Normal"
+  },
+  "events": [
+    {
+      "epoch_index": 0,
+      "timestamp_start": 0.0,
+      "timestamp_end": 29.95,
+      "event_type": "Motion",
+      "RR_mean": 0.1046,
+      "RR_std": 0.0571,
+      "amplitude": 0.2019,
+      "motion_score_mean": 0.3123
+    },
+    {
+      "epoch_index": 1,
+      "timestamp_start": 15.0,
+      "timestamp_end": 44.95,
+      "event_type": "Motion",
+      "RR_mean": 0.108,
+      "RR_std": 0.0526,
+      "amplitude": 0.1986,
+      "motion_score_mean": 0.3245
+    },
+    {
+      "epoch_index": 2,
+      "timestamp_start": 30.0,
+      "timestamp_end": 59.95,
+      "event_type": "Motion",
+      "RR_mean": 0.1083,
+      "RR_std": 0.0538,
+      "amplitude": 0.201,
+      "motion_score_mean": 0.3376
+    },
+    {
+      "epoch_index": 3,
+      "timestamp_start": 45.0,
+      "timestamp_end": 74.95,
+      "event_type": "Motion",
+      "RR_mean": 0.109,
+      "RR_std": 0.0542,
+      "amplitude": 0.2051,
+      "motion_score_mean": 0.3383
+    },
+    {
+      "epoch_index": 4,
+      "timestamp_start": 60.0,
+      "timestamp_end": 89.95,
+      "event_type": "Motion",
+      "RR_mean": 0.1089,
+      "RR_std": 0.0537,
+      "amplitude": 0.2053,
+      "motion_score_mean": 0.3334
+    },
+    {
+      "epoch_index": 5,
+      "timestamp_start": 75.0,
+      "timestamp_end": 104.95,
+      "event_type": "Motion",
+      "RR_mean": 0.1086,
+      "RR_std": 0.0537,
+      "amplitude": 0.2007,
+      "motion_score_mean": 0.3298
+    },
+    {
+      "epoch_index": 6,
+      "timestamp_start": 90.0,
+      "timestamp_end": 119.95,
+      "event_type": "Motion",
+      "RR_mean": 0.1082,
+      "RR_std": 0.0542,
+      "amplitude": 0.1999,
+      "motion_score_mean": 0.3362
+    }
+  ]
+}

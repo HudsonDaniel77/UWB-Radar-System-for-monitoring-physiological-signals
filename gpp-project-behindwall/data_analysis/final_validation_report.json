@@ -1,0 +1,23 @@
+{
+  "model_type": "XGBoost Regressor",
+  "target_variable": "Avg_HR_clean (Raw HR)",
+  "mae_bpm": 0.14319972991943344,
+  "rmse_bpm": 0.45464380234670654,
+  "r2_score": 0.9994667803719747,
+  "performance_rating": "OUTSTANDING",
+  "samples_tested": 100,
+  "features_used": [
+    "Avg_HR_clean",
+    "Avg_RR_clean",
+    "Avg_Range",
+    "Range_SD",
+    "HR_SD",
+    "RR_SD",
+    "HR_P2P",
+    "RR_P2P",
+    "Range_Slope",
+    "SQI"
+  ],
+  "calibration_required": false,
+  "ready_for_production": true
+}

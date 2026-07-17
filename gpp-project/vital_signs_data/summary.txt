@@ -1,0 +1,4 @@
+Breathing Rate: 14 BPM
+Heart Rate: 89 BPM
+Sampling Rate: 20 FPS
+Duration: 120 seconds

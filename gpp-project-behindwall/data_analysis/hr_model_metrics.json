@@ -1,0 +1,32 @@
+{
+  "MAE": 4.479728179931642,
+  "RMSE": 5.8990672694650055,
+  "R2": 0.8728200459091662,
+  "n_train": 80,
+  "n_test": 20,
+  "features": [
+    "Avg_HR_clean",
+    "Avg_RR_clean",
+    "Avg_Range",
+    "Range_SD",
+    "HR_SD",
+    "RR_SD",
+    "HR_P2P",
+    "RR_P2P",
+    "Range_Slope",
+    "SQI"
+  ],
+  "feature_importances": {
+    "Avg_HR_clean": 0.7608028054237366,
+    "Avg_RR_clean": 0.015248781070113182,
+    "Avg_Range": 0.010819572024047375,
+    "Range_SD": 0.047377657145261765,
+    "HR_SD": 0.010682888329029083,
+    "RR_SD": 0.014134496450424194,
+    "HR_P2P": 0.03774362429976463,
+    "RR_P2P": 0.026117099449038506,
+    "Range_Slope": 0.033193618059158325,
+    "SQI": 0.04387941583991051
+  },
+  "chosen_model": "XGBoost"
+}

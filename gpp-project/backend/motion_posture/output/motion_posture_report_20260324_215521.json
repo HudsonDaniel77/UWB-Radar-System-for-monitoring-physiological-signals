@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-03-24T21:55:21.312910",
+  "session_stats": {
+    "posture_distribution_pct": {
+      "Still \u2013 Normal Breathing": 100.0
+    },
+    "posture_epoch_counts": {
+      "Still \u2013 Normal Breathing": 1
+    },
+    "motion_epoch_counts": {
+      "Major Movement": 1
+    },
+    "event_posture_correlation": {},
+    "total_annotations": 0
+  },
+  "event_annotations": [],
+  "combined_timeline": [
+    {
+      "epoch_index": 0,
+      "timestamp_start": 0.007,
+      "timestamp_end": 122.056,
+      "motion_type": "Major Movement",
+      "motion_score": 0.5465,
+      "posture_label": "Still \u2013 Normal Breathing",
+      "posture_confidence": 0.85,
+      "associated_sleep_event": null
+    }
+  ]
+}

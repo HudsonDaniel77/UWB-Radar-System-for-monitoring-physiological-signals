@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-04-08T23:33:12.476496",
+  "summary": {
+    "total_duration_sec": 121.19,
+    "total_epochs": 8,
+    "baseline_amplitude": 0.1462,
+    "amplitude_threshold": 0.1023,
+    "event_counts": {
+      "Normal": 0,
+      "Irregular": 0,
+      "Apnea": 0,
+      "Motion": 8
+    },
+    "event_time_sec": {
+      "Normal": 0.0,
+      "Irregular": 0.0,
+      "Apnea": 0.0,
+      "Motion": 240.0
+    },
+    "apnea_events_per_hour": 0.0,
+    "severity": "Normal"
+  },
+  "events": [
+    {
+      "epoch_index": 0,
+      "timestamp_start": 0.022,
+      "timestamp_end": 36.009,
+      "event_type": "Motion",
+      "RR_mean": 0.1985,
+      "RR_std": 0.1489,
+      "amplitude": 0.5129,
+      "motion_score_mean": 0.1578,
+      "HR_mean": 133.33
+    },
+    {
+      "epoch_index": 1,
+      "timestamp_start": 18.951,
+      "timestamp_end": 50.68,
+      "event_type": "Motion",
+      "RR_mean": 0.0917,
+      "RR_std": 0.0872,
+      "amplitude": 0.3153,
+      "motion_score_mean": 0.054,
+      "HR_mean": 133.33
+    },
+    {
+      "epoch_index": 2,
+      "timestamp_start": 36.597,
+      "timestamp_end": 63.26,
+      "event_type": "Motion",
+      "RR_mean": 0.029,
+      "RR_std": 0.019,
+      "amplitude": 0.052,
+      "motion_score_mean": 0.0157,
+      "HR_mean": 133.33
+    },
+    {
+      "epoch_index": 3,
+      "timestamp_start": 51.024,
+      "timestamp_end": 76.676,
+      "event_type": "Motion",
+      "RR_mean": 0.0314,
+      "RR_std": 0.0515,
+      "amplitude": 0.1898,
+      "motion_score_mean": 0.0763,
+      "HR_mean": 133.33
+    },
+    {
+      "epoch_index": 4,
+      "timestamp_start": 63.814,
+      "timestamp_end": 92.2,
+      "event_type": "Motion",
+      "RR_mean": 0.0476,
+      "RR_std": 0.0586,
+      "amplitude": 0.1896,
+      "motion_score_mean": 0.0898,
+      "HR_mean": 125.79
+    },
+    {
+      "epoch_index": 5,
+      "timestamp_start": 77.333,
+      "timestamp_end": 106.636,
+      "event_type": "Motion",
+      "RR_mean": 0.0898,
+      "RR_std": 0.1035,
+      "amplitude": 0.4311,
+      "motion_score_mean": 0.1048,
+      "HR_mean": 88.78
+    },
+    {
+      "epoch_index": 6,
+      "timestamp_start": 92.778,
+      "timestamp_end": 120.767,
+      "event_type": "Motion",
+      "RR_mean": 0.1451,
+      "RR_std": 0.1439,
+      "amplitude": 0.4309,
+      "motion_score_mean": 0.1437,
+      "HR_mean": 60.0
+    },
+    {
+      "epoch_index": 7,
+      "timestamp_start": 107.231,
+      "timestamp_end": 121.211,
+      "event_type": "Motion",
+      "RR_mean": 0.1536,
+      "RR_std": 0.1587,
+      "amplitude": 0.4308,
+      "motion_score_mean": 0.1189,
+      "HR_mean": 60.0
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+epoch_index,timestamp_start,timestamp_end,motion_type,motion_score,posture_label,posture_confidence,associated_sleep_event
+0,0.02,126.246,Major Movement,0.5539,Restless,0.75,Motion

@@ -1,0 +1,39 @@
+{
+  "chosen_model": "GradientBoosting",
+  "rf_metrics": {
+    "MAE": 0.20881852644549473,
+    "RMSE": 0.3446596669724885,
+    "R2": 0.9996411832778758
+  },
+  "gb_metrics": {
+    "MAE": 0.11826890429071228,
+    "RMSE": 0.1918664714424881,
+    "R2": 0.9998888038057033
+  },
+  "n_train": 183,
+  "n_test": 46,
+  "features": [
+    "Avg_HR_clean",
+    "Avg_RR_clean",
+    "Avg_Range",
+    "Range_SD",
+    "HR_SD",
+    "RR_SD",
+    "HR_P2P",
+    "RR_P2P",
+    "Range_Slope",
+    "SQI"
+  ],
+  "feature_importances": {
+    "Avg_HR_clean": 0.9997981046173743,
+    "Avg_RR_clean": 7.449781840692895e-07,
+    "Avg_Range": 2.511481340829385e-05,
+    "Range_SD": 3.959646469910873e-08,
+    "HR_SD": 7.387823773449416e-08,
+    "RR_SD": 0.00010633040797251138,
+    "HR_P2P": 8.175827144125496e-08,
+    "RR_P2P": 6.927341614217089e-05,
+    "Range_Slope": 2.0502134507055573e-07,
+    "SQI": 3.1512599847300934e-08
+  }
+}

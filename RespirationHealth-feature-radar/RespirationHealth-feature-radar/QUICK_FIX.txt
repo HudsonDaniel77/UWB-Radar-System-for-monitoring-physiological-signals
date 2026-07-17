@@ -1,0 +1,58 @@
+QUICK REFERENCE CARD
+====================
+
+ERROR: "Failed to connect to backend. Is app_demo.py running on port 6666?"
+
+MEANING: Backend is not running.
+
+FIX #1 - ONE CLICK (FASTEST):
+Double-click: START_DEMO.bat
+
+FIX #2 - MANUAL (MOST RELIABLE):
+
+Terminal 1:
+-----------
+cd RespirationHealth-feature-radar\RespirationHealth-feature-radar\backend
+py app_demo.py
+
+Terminal 2:
+-----------
+cd RespirationHealth-feature-radar\RespirationHealth-feature-radar\frontend
+npm run dev
+
+Then:
+-----
+1. Go to http://localhost:5173
+2. Refresh browser (Ctrl+R)
+3. Click START SENSOR
+
+STILL NOT WORKING?
+------------------
+1. Check browser console (F12)
+2. Check Terminal 1 for error messages
+3. Run: CHECK_BACKEND.bat
+4. Read: TROUBLESHOOT_BUTTON.txt
+5. Read: SETUP_GUIDE.md
+
+KEY POINTS:
+-----------
+✓ BOTH terminals must stay open
+✓ Backend = port 6666
+✓ Frontend = port 5173
+✓ Browser must be at localhost:5173
+✓ Demo mode needs NO hardware
+
+COMMON ERRORS:
+--------------
+"ModuleNotFoundError"?
+→ py -m pip install flask flask-cors flask-socketio pyserial numpy scipy requests
+
+"Port already in use"?
+→ taskkill /PID <number> /F
+
+"npm not found"?
+→ Install Node.js from nodejs.org
+
+"Still says seeking radar"?
+→ Refresh browser (Ctrl+R)
+→ Check backend is still running in Terminal 1

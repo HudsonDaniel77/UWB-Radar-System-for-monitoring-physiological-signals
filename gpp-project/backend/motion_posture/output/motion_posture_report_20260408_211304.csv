@@ -1,0 +1,3 @@
+epoch_index,timestamp_start,timestamp_end,motion_type,motion_score,posture_label,posture_confidence,associated_sleep_event
+0,0.026,116.378,Major Movement,0.5575,Restless,0.75,Motion
+1,61.739,120.063,Major Movement,0.4618,Still – Normal Breathing,0.85,Motion

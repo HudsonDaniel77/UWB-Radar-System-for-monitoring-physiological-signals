@@ -1,0 +1,112 @@
+{
+  "generated_at": "2026-04-08T22:02:43.703442",
+  "sleep_structure": {
+    "total_epochs": 0,
+    "total_duration_sec": 0,
+    "total_duration_min": 0,
+    "time_per_stage_sec": {
+      "Wake": 0,
+      "REM": 0,
+      "Light": 0,
+      "Deep": 0
+    },
+    "pct_per_stage": {
+      "Wake": 0,
+      "REM": 0,
+      "Light": 0,
+      "Deep": 0
+    },
+    "stage_counts": {},
+    "sleep_efficiency": 0,
+    "sleep_efficiency_pct": 0,
+    "efficiency_rating": "N/A",
+    "sleep_onset_latency_sec": 0,
+    "rem_episodes": 0
+  },
+  "metrics": {
+    "accuracy": 1.0,
+    "precision_macro": 1.0,
+    "recall_macro": 1.0,
+    "f1_macro": 1.0,
+    "cohens_kappa": 1.0,
+    "per_class_f1": {
+      "Wake": 1.0,
+      "REM": 1.0,
+      "Light": 1.0,
+      "Deep": 1.0
+    },
+    "confusion_matrix": [
+      [
+        120,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        120,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        120,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        120
+      ]
+    ],
+    "classification_report": {
+      "Wake": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 120.0
+      },
+      "REM": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 120.0
+      },
+      "Light": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 120.0
+      },
+      "Deep": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 120.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 480.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 480.0
+      }
+    },
+    "roc_auc_macro": 1.0,
+    "roc_auc_per_class": {
+      "Wake": 1.0,
+      "REM": 1.0,
+      "Light": 1.0,
+      "Deep": 1.0
+    }
+  },
+  "epoch_records": []
+}

@@ -1,0 +1,33 @@
+{
+  "MAE": 0.7008709716796873,
+  "RMSE": 1.0164935207707948,
+  "R2": 0.9956632814630719,
+  "n_train": 80,
+  "n_test": 20,
+  "target": "Avg_HR_clean (Raw HR)",
+  "features": [
+    "Avg_HR_clean",
+    "Avg_RR_clean",
+    "Avg_Range",
+    "Range_SD",
+    "HR_SD",
+    "RR_SD",
+    "HR_P2P",
+    "RR_P2P",
+    "Range_Slope",
+    "SQI"
+  ],
+  "feature_importances": {
+    "Avg_HR_clean": 0.9999787211418152,
+    "Avg_RR_clean": 2.4018436306505464e-06,
+    "Avg_Range": 3.001581717398949e-06,
+    "Range_SD": 7.745731522845745e-07,
+    "HR_SD": 9.373675879942311e-07,
+    "RR_SD": 1.4653506923423265e-06,
+    "HR_P2P": 3.157231731165666e-06,
+    "RR_P2P": 8.63246441440424e-06,
+    "Range_Slope": 6.203276257110701e-07,
+    "SQI": 2.795194404825452e-07
+  },
+  "chosen_model": "XGBoost"
+}

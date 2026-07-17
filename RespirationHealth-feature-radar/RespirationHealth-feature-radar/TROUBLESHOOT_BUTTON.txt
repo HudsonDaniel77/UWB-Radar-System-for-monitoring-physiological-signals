@@ -1,0 +1,95 @@
+TROUBLESHOOTING: Button shows "Failed to connect to backend"
+==============================================================
+
+This means the backend (app_demo.py) is NOT running on port 6666.
+
+QUICK FIX (5 SECONDS):
+----------------------
+
+1. Right-click START_DEMO.bat
+   -> Select "Run as administrator"
+   -> Wait for browser to open
+
+Everything should work now!
+
+---
+
+IF THAT DOESN'T WORK:
+---------------------
+
+STEP 1: Close everything
+- Close all browser windows
+- Close all terminal windows
+- Wait 5 seconds
+
+STEP 2: Open TWO NEW terminals
+- Press Windows Key + R
+- Type: cmd
+- Press Enter (opens Terminal 1)
+- Repeat: This opens Terminal 2
+
+STEP 3: In TERMINAL 1, run:
+cd RespirationHealth-feature-radar\RespirationHealth-feature-radar\backend
+py app_demo.py
+
+You should see:
+  ============================================================
+  🚀 DEMO MODE - RespirationHealth Backend
+  ============================================================
+  Ready on http://127.0.0.1:6666
+  Generating synthetic vital signs data...
+  ============================================================
+
+If you see this, backends is WORKING! Leave this terminal open.
+
+STEP 4: In TERMINAL 2, run:
+cd RespirationHealth-feature-radar\RespirationHealth-feature-radar\frontend
+npm run dev
+
+You should see:
+  ➜  Local:   http://localhost:5173/
+
+STEP 5: Open browser
+Go to: http://localhost:5173
+
+STEP 6: Click START SENSOR button
+It should work now!
+
+---
+
+IF STILL NOT WORKING:
+---------------------
+
+Check Terminal 1 for error messages. Common ones:
+
+"Port 6666 already in use"
+-> Run: netstat -ano | findstr :6666
+-> Find the PID and kill it: taskkill /PID <number> /F
+
+"ModuleNotFoundError: No module named 'flask'"
+-> Run in Terminal 1:
+   py -m pip install flask flask-cors flask-socketio pyserial numpy scipy requests
+
+"npm: command not found"
+-> Node.js not installed. Download from nodejs.org and install.
+
+Any other error? Take a screenshot and share it.
+
+---
+
+DIAGNOSTIC TOOL:
+----------------
+
+Or simply double-click: CHECK_BACKEND.bat
+This will tell you if the backend is running and listening.
+
+---
+
+Still stuck? The button alert shows:
+"Failed to connect to backend. Is app_demo.py running on port 6666?"
+
+This literally means:
+✗ Backend is NOT running
+✗ Nothing is listening on port 6666
+
+Solution: Follow STEP 1-4 above.

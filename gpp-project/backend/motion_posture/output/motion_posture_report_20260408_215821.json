@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-04-08T21:58:21.267876",
+  "session_stats": {
+    "posture_distribution_pct": {
+      "Restless": 100.0
+    },
+    "posture_epoch_counts": {
+      "Restless": 1
+    },
+    "motion_epoch_counts": {
+      "Major Movement": 1
+    },
+    "event_posture_correlation": {},
+    "total_annotations": 0
+  },
+  "event_annotations": [],
+  "combined_timeline": [
+    {
+      "epoch_index": 0,
+      "timestamp_start": 0.02,
+      "timestamp_end": 126.246,
+      "motion_type": "Major Movement",
+      "motion_score": 0.5539,
+      "posture_label": "Restless",
+      "posture_confidence": 0.75,
+      "associated_sleep_event": null
+    }
+  ]
+}

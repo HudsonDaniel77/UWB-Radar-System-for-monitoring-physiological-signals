@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-04-08T21:13:04.091405",
+  "session_stats": {
+    "posture_distribution_pct": {
+      "Restless": 50.0,
+      "Still \u2013 Normal Breathing": 50.0
+    },
+    "posture_epoch_counts": {
+      "Restless": 1,
+      "Still \u2013 Normal Breathing": 1
+    },
+    "motion_epoch_counts": {
+      "Major Movement": 2
+    },
+    "event_posture_correlation": {
+      "Motion_Restless": 1
+    },
+    "total_annotations": 1
+  },
+  "event_annotations": [
+    {
+      "event_type": "Motion",
+      "event_start": 0.026,
+      "event_end": 120.063,
+      "posture_during": "Restless",
+      "motion_before": "N/A",
+      "motion_after": "N/A",
+      "description": "Motion event occurred during Restless posture.",
+      "RR_mean": 0.1404,
+      "HR_mean": 62.44
+    }
+  ],
+  "combined_timeline": [
+    {
+      "epoch_index": 0,
+      "timestamp_start": 0.026,
+      "timestamp_end": 116.378,
+      "motion_type": "Major Movement",
+      "motion_score": 0.5575,
+      "posture_label": "Restless",
+      "posture_confidence": 0.75,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 1,
+      "timestamp_start": 61.739,
+      "timestamp_end": 120.063,
+      "motion_type": "Major Movement",
+      "motion_score": 0.4618,
+      "posture_label": "Still \u2013 Normal Breathing",
+      "posture_confidence": 0.85,
+      "associated_sleep_event": "Motion"
+    }
+  ]
+}

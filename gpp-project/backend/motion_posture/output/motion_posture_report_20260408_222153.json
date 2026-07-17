@@ -1,0 +1,245 @@
+{
+  "generated_at": "2026-04-08T22:21:53.619127",
+  "session_stats": {
+    "posture_distribution_pct": {
+      "Restless": 40.0,
+      "Active": 13.3,
+      "Still \u2013 Normal Breathing": 46.7
+    },
+    "posture_epoch_counts": {
+      "Restless": 6,
+      "Active": 2,
+      "Still \u2013 Normal Breathing": 7
+    },
+    "motion_epoch_counts": {
+      "Major Movement": 13,
+      "Turning": 1,
+      "Minor Movement": 1
+    },
+    "event_posture_correlation": {
+      "Motion_Restless": 4,
+      "Irregular_Still \u2013 Normal Breathing": 2
+    },
+    "total_annotations": 6
+  },
+  "event_annotations": [
+    {
+      "event_type": "Motion",
+      "event_start": 0.017,
+      "event_end": 32.426,
+      "posture_during": "Restless",
+      "motion_before": "N/A",
+      "motion_after": "Turning",
+      "description": "Motion event occurred during Restless posture (followed by Turning).",
+      "RR_mean": 0.2573,
+      "HR_mean": 101.62
+    },
+    {
+      "event_type": "Motion",
+      "event_start": 16.983,
+      "event_end": 50.399,
+      "posture_during": "Restless",
+      "motion_before": "Major Movement",
+      "motion_after": "Major Movement",
+      "description": "Motion event occurred during Restless posture (preceded by Major Movement) (followed by Major Movement).",
+      "RR_mean": 0.3843,
+      "HR_mean": 65.68
+    },
+    {
+      "event_type": "Motion",
+      "event_start": 32.748,
+      "event_end": 67.297,
+      "posture_during": "Restless",
+      "motion_before": "Major Movement",
+      "motion_after": "Major Movement",
+      "description": "Motion event occurred during Restless posture (preceded by Major Movement) (followed by Major Movement).",
+      "RR_mean": 0.3506,
+      "HR_mean": 60.96
+    },
+    {
+      "event_type": "Motion",
+      "event_start": 50.674,
+      "event_end": 83.809,
+      "posture_during": "Restless",
+      "motion_before": "Major Movement",
+      "motion_after": "Major Movement",
+      "description": "Motion event occurred during Restless posture (preceded by Major Movement) (followed by Major Movement).",
+      "RR_mean": 0.1326,
+      "HR_mean": 60.6
+    },
+    {
+      "event_type": "Irregular",
+      "event_start": 67.551,
+      "event_end": 96.726,
+      "posture_during": "Still \u2013 Normal Breathing",
+      "motion_before": "Major Movement",
+      "motion_after": "Major Movement",
+      "description": "Irregular event occurred during Still \u2013 Normal Breathing posture (preceded by Major Movement) (followed by Major Movement).",
+      "RR_mean": 0.0563,
+      "HR_mean": 61.42
+    },
+    {
+      "event_type": "Irregular",
+      "event_start": 83.993,
+      "event_end": 108.924,
+      "posture_during": "Still \u2013 Normal Breathing",
+      "motion_before": "Major Movement",
+      "motion_after": "Major Movement",
+      "description": "Irregular event occurred during Still \u2013 Normal Breathing posture (preceded by Major Movement) (followed by Major Movement).",
+      "RR_mean": 0.0308,
+      "HR_mean": 61.06
+    }
+  ],
+  "combined_timeline": [
+    {
+      "epoch_index": 0,
+      "timestamp_start": 0.017,
+      "timestamp_end": 16.747,
+      "motion_type": "Major Movement",
+      "motion_score": 0.5912,
+      "posture_label": "Restless",
+      "posture_confidence": 0.75,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 1,
+      "timestamp_start": 8.751,
+      "timestamp_end": 24.087,
+      "motion_type": "Major Movement",
+      "motion_score": 0.6094,
+      "posture_label": "Restless",
+      "posture_confidence": 0.75,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 2,
+      "timestamp_start": 17.194,
+      "timestamp_end": 32.748,
+      "motion_type": "Major Movement",
+      "motion_score": 0.5955,
+      "posture_label": "Restless",
+      "posture_confidence": 0.75,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 3,
+      "timestamp_start": 24.473,
+      "timestamp_end": 42.117,
+      "motion_type": "Major Movement",
+      "motion_score": 0.6036,
+      "posture_label": "Active",
+      "posture_confidence": 0.548,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 4,
+      "timestamp_start": 33.434,
+      "timestamp_end": 50.965,
+      "motion_type": "Turning",
+      "motion_score": 0.6819,
+      "posture_label": "Active",
+      "posture_confidence": 0.56,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 5,
+      "timestamp_start": 42.719,
+      "timestamp_end": 60.042,
+      "motion_type": "Major Movement",
+      "motion_score": 0.4411,
+      "posture_label": "Restless",
+      "posture_confidence": 0.75,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 6,
+      "timestamp_start": 51.702,
+      "timestamp_end": 68.04,
+      "motion_type": "Major Movement",
+      "motion_score": 0.4722,
+      "posture_label": "Restless",
+      "posture_confidence": 0.75,
+      "associated_sleep_event": "Irregular"
+    },
+    {
+      "epoch_index": 7,
+      "timestamp_start": 60.499,
+      "timestamp_end": 76.456,
+      "motion_type": "Major Movement",
+      "motion_score": 0.5299,
+      "posture_label": "Restless",
+      "posture_confidence": 0.75,
+      "associated_sleep_event": "Irregular"
+    },
+    {
+      "epoch_index": 8,
+      "timestamp_start": 68.52,
+      "timestamp_end": 84.524,
+      "motion_type": "Major Movement",
+      "motion_score": 0.5442,
+      "posture_label": "Still \u2013 Normal Breathing",
+      "posture_confidence": 0.85,
+      "associated_sleep_event": "Irregular"
+    },
+    {
+      "epoch_index": 9,
+      "timestamp_start": 77.096,
+      "timestamp_end": 91.164,
+      "motion_type": "Minor Movement",
+      "motion_score": 0.3102,
+      "posture_label": "Still \u2013 Normal Breathing",
+      "posture_confidence": 0.85,
+      "associated_sleep_event": "Irregular"
+    },
+    {
+      "epoch_index": 10,
+      "timestamp_start": 84.918,
+      "timestamp_end": 97.728,
+      "motion_type": "Major Movement",
+      "motion_score": 0.3569,
+      "posture_label": "Still \u2013 Normal Breathing",
+      "posture_confidence": 0.85,
+      "associated_sleep_event": "Irregular"
+    },
+    {
+      "epoch_index": 11,
+      "timestamp_start": 91.577,
+      "timestamp_end": 104.029,
+      "motion_type": "Major Movement",
+      "motion_score": 0.4467,
+      "posture_label": "Still \u2013 Normal Breathing",
+      "posture_confidence": 0.85,
+      "associated_sleep_event": "Irregular"
+    },
+    {
+      "epoch_index": 12,
+      "timestamp_start": 98.1,
+      "timestamp_end": 110.054,
+      "motion_type": "Major Movement",
+      "motion_score": 0.3873,
+      "posture_label": "Still \u2013 Normal Breathing",
+      "posture_confidence": 0.85,
+      "associated_sleep_event": "Irregular"
+    },
+    {
+      "epoch_index": 13,
+      "timestamp_start": 104.384,
+      "timestamp_end": 115.715,
+      "motion_type": "Major Movement",
+      "motion_score": 0.5464,
+      "posture_label": "Still \u2013 Normal Breathing",
+      "posture_confidence": 0.85,
+      "associated_sleep_event": "Irregular"
+    },
+    {
+      "epoch_index": 14,
+      "timestamp_start": 110.422,
+      "timestamp_end": 121.069,
+      "motion_type": "Major Movement",
+      "motion_score": 0.4421,
+      "posture_label": "Still \u2013 Normal Breathing",
+      "posture_confidence": 0.85,
+      "associated_sleep_event": null
+    }
+  ]
+}

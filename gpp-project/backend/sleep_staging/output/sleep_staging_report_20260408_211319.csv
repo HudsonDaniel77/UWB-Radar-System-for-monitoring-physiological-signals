@@ -1,0 +1,2 @@
+epoch_index,timestamp_start,timestamp_end,predicted_stage,confidence,prob_Wake,prob_REM,prob_Light,prob_Deep
+0,0.026,120.063,REM,0.85,0.05,0.85,0.05,0.05

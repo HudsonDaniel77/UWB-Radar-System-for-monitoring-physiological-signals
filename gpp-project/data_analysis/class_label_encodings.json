@@ -1,0 +1,34 @@
+{
+  "HR_Class": {
+    "classes": [
+      "Elevated",
+      "High",
+      "Normal"
+    ],
+    "mapping": {
+      "Elevated": 0,
+      "High": 1,
+      "Normal": 2
+    }
+  },
+  "RR_Class": {
+    "classes": [
+      "Low",
+      "Normal"
+    ],
+    "mapping": {
+      "Low": 0,
+      "Normal": 1
+    }
+  },
+  "Stress_Class": {
+    "classes": [
+      "Relaxed",
+      "Very High Stress"
+    ],
+    "mapping": {
+      "Relaxed": 0,
+      "Very High Stress": 1
+    }
+  }
+}

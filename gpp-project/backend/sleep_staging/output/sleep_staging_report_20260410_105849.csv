@@ -1,0 +1,5 @@
+epoch_index,timestamp_start,timestamp_end,predicted_stage,confidence,prob_Wake,prob_REM,prob_Light,prob_Deep
+0,0.016,30.485,Wake,0.9565,0.9565,0.0145,0.0145,0.0145
+1,30.901,62.886,Wake,0.6,0.6,0.1333,0.1333,0.1333
+2,63.348,95.887,Wake,0.6682,0.6682,0.1106,0.1106,0.1106
+3,96.337,119.808,Deep,0.55,0.15,0.15,0.15,0.55

@@ -1,0 +1,736 @@
+{
+  "generated_at": "2026-03-01T21:01:51.160889",
+  "session_stats": {
+    "posture_distribution_pct": {
+      "Unknown": 100.0
+    },
+    "posture_epoch_counts": {
+      "Unknown": 46
+    },
+    "motion_epoch_counts": {
+      "Major Movement": 34,
+      "Turning": 12
+    },
+    "event_posture_correlation": {
+      "Motion_Unknown": 23
+    },
+    "total_annotations": 23
+  },
+  "event_annotations": [
+    {
+      "event_type": "Motion",
+      "event_start": 0.001,
+      "event_end": 3.0,
+      "posture_during": "Unknown",
+      "motion_before": "N/A",
+      "motion_after": "Major Movement",
+      "description": "Motion event occurred (followed by Major Movement).",
+      "RR_mean": 0.0932,
+      "HR_mean": 132.75
+    },
+    {
+      "event_type": "Motion",
+      "event_start": 1.655,
+      "event_end": 4.444,
+      "posture_during": "Unknown",
+      "motion_before": "Major Movement",
+      "motion_after": "Major Movement",
+      "description": "Motion event occurred (preceded by Major Movement) (followed by Major Movement).",
+      "RR_mean": 0.2414,
+      "HR_mean": 130.73
+    },
+    {
+      "event_type": "Motion",
+      "event_start": 3.0,
+      "event_end": 5.905,
+      "posture_during": "Unknown",
+      "motion_before": "Major Movement",
+      "motion_after": "Major Movement",
+      "description": "Motion event occurred (preceded by Major Movement) (followed by Major Movement).",
+      "RR_mean": 0.3875,
+      "HR_mean": 126.47
+    },
+    {
+      "event_type": "Motion",
+      "event_start": 4.448,
+      "event_end": 7.283,
+      "posture_during": "Unknown",
+      "motion_before": "Major Movement",
+      "motion_after": "Major Movement",
+      "description": "Motion event occurred (preceded by Major Movement) (followed by Major Movement).",
+      "RR_mean": 0.4215,
+      "HR_mean": 122.04
+    },
+    {
+      "event_type": "Motion",
+      "event_start": 5.906,
+      "event_end": 8.714,
+      "posture_during": "Unknown",
+      "motion_before": "Major Movement",
+      "motion_after": "Major Movement",
+      "description": "Motion event occurred (preceded by Major Movement) (followed by Major Movement).",
+      "RR_mean": 0.3706,
+      "HR_mean": 118.54
+    },
+    {
+      "event_type": "Motion",
+      "event_start": 7.3,
+      "event_end": 10.11,
+      "posture_during": "Unknown",
+      "motion_before": "Major Movement",
+      "motion_after": "Major Movement",
+      "description": "Motion event occurred (preceded by Major Movement) (followed by Major Movement).",
+      "RR_mean": 0.3091,
+      "HR_mean": 115.66
+    },
+    {
+      "event_type": "Motion",
+      "event_start": 8.718,
+      "event_end": 11.493,
+      "posture_during": "Unknown",
+      "motion_before": "Major Movement",
+      "motion_after": "Major Movement",
+      "description": "Motion event occurred (preceded by Major Movement) (followed by Major Movement).",
+      "RR_mean": 0.2596,
+      "HR_mean": 111.4
+    },
+    {
+      "event_type": "Motion",
+      "event_start": 10.114,
+      "event_end": 12.864,
+      "posture_during": "Unknown",
+      "motion_before": "Major Movement",
+      "motion_after": "Major Movement",
+      "description": "Motion event occurred (preceded by Major Movement) (followed by Major Movement).",
+      "RR_mean": 0.2352,
+      "HR_mean": 106.46
+    },
+    {
+      "event_type": "Motion",
+      "event_start": 11.493,
+      "event_end": 14.178,
+      "posture_during": "Unknown",
+      "motion_before": "Major Movement",
+      "motion_after": "Major Movement",
+      "description": "Motion event occurred (preceded by Major Movement) (followed by Major Movement).",
+      "RR_mean": 0.2393,
+      "HR_mean": 102.82
+    },
+    {
+      "event_type": "Motion",
+      "event_start": 12.866,
+      "event_end": 15.466,
+      "posture_during": "Unknown",
+      "motion_before": "Major Movement",
+      "motion_after": "Major Movement",
+      "description": "Motion event occurred (preceded by Major Movement) (followed by Major Movement).",
+      "RR_mean": 0.243,
+      "HR_mean": 99.52
+    },
+    {
+      "event_type": "Motion",
+      "event_start": 14.182,
+      "event_end": 16.75,
+      "posture_during": "Unknown",
+      "motion_before": "Major Movement",
+      "motion_after": "Major Movement",
+      "description": "Motion event occurred (preceded by Major Movement) (followed by Major Movement).",
+      "RR_mean": 0.2188,
+      "HR_mean": 95.46
+    },
+    {
+      "event_type": "Motion",
+      "event_start": 15.47,
+      "event_end": 18.065,
+      "posture_during": "Unknown",
+      "motion_before": "Major Movement",
+      "motion_after": "Major Movement",
+      "description": "Motion event occurred (preceded by Major Movement) (followed by Major Movement).",
+      "RR_mean": 0.2137,
+      "HR_mean": 89.55
+    },
+    {
+      "event_type": "Motion",
+      "event_start": 16.755,
+      "event_end": 19.339,
+      "posture_during": "Unknown",
+      "motion_before": "Major Movement",
+      "motion_after": "Major Movement",
+      "description": "Motion event occurred (preceded by Major Movement) (followed by Major Movement).",
+      "RR_mean": 0.2194,
+      "HR_mean": 86.56
+    },
+    {
+      "event_type": "Motion",
+      "event_start": 18.066,
+      "event_end": 20.597,
+      "posture_during": "Unknown",
+      "motion_before": "Major Movement",
+      "motion_after": "Turning",
+      "description": "Motion event occurred (preceded by Major Movement) (followed by Turning).",
+      "RR_mean": 0.2054,
+      "HR_mean": 86.51
+    },
+    {
+      "event_type": "Motion",
+      "event_start": 19.34,
+      "event_end": 21.861,
+      "posture_during": "Unknown",
+      "motion_before": "Major Movement",
+      "motion_after": "Turning",
+      "description": "Motion event occurred (preceded by Major Movement) (followed by Turning).",
+      "RR_mean": 0.2002,
+      "HR_mean": 84.96
+    },
+    {
+      "event_type": "Motion",
+      "event_start": 20.605,
+      "event_end": 23.138,
+      "posture_during": "Unknown",
+      "motion_before": "Major Movement",
+      "motion_after": "Turning",
+      "description": "Motion event occurred (preceded by Major Movement) (followed by Turning).",
+      "RR_mean": 0.2054,
+      "HR_mean": 81.67
+    },
+    {
+      "event_type": "Motion",
+      "event_start": 21.87,
+      "event_end": 24.385,
+      "posture_during": "Unknown",
+      "motion_before": "Major Movement",
+      "motion_after": "Turning",
+      "description": "Motion event occurred (preceded by Major Movement) (followed by Turning).",
+      "RR_mean": 0.2083,
+      "HR_mean": 77.84
+    },
+    {
+      "event_type": "Motion",
+      "event_start": 23.139,
+      "event_end": 25.654,
+      "posture_during": "Unknown",
+      "motion_before": "Major Movement",
+      "motion_after": "Turning",
+      "description": "Motion event occurred (preceded by Major Movement) (followed by Turning).",
+      "RR_mean": 0.2152,
+      "HR_mean": 75.55
+    },
+    {
+      "event_type": "Motion",
+      "event_start": 24.388,
+      "event_end": 26.937,
+      "posture_during": "Unknown",
+      "motion_before": "Major Movement",
+      "motion_after": "Turning",
+      "description": "Motion event occurred (preceded by Major Movement) (followed by Turning).",
+      "RR_mean": 0.2031,
+      "HR_mean": 73.88
+    },
+    {
+      "event_type": "Motion",
+      "event_start": 25.659,
+      "event_end": 28.277,
+      "posture_during": "Unknown",
+      "motion_before": "Major Movement",
+      "motion_after": "Turning",
+      "description": "Motion event occurred (preceded by Major Movement) (followed by Turning).",
+      "RR_mean": 0.1903,
+      "HR_mean": 72.91
+    },
+    {
+      "event_type": "Motion",
+      "event_start": 26.945,
+      "event_end": 29.561,
+      "posture_during": "Unknown",
+      "motion_before": "Major Movement",
+      "motion_after": "Turning",
+      "description": "Motion event occurred (preceded by Major Movement) (followed by Turning).",
+      "RR_mean": 0.2012,
+      "HR_mean": 70.85
+    },
+    {
+      "event_type": "Motion",
+      "event_start": 28.283,
+      "event_end": 31.195,
+      "posture_during": "Unknown",
+      "motion_before": "Major Movement",
+      "motion_after": "N/A",
+      "description": "Motion event occurred (preceded by Major Movement).",
+      "RR_mean": 0.2111,
+      "HR_mean": 68.9
+    },
+    {
+      "event_type": "Motion",
+      "event_start": 29.568,
+      "event_end": 36.86,
+      "posture_during": "Unknown",
+      "motion_before": "Major Movement",
+      "motion_after": "N/A",
+      "description": "Motion event occurred (preceded by Major Movement).",
+      "RR_mean": 0.1909,
+      "HR_mean": 69.99
+    }
+  ],
+  "combined_timeline": [
+    {
+      "epoch_index": 0,
+      "timestamp_start": 0.001,
+      "timestamp_end": 1.646,
+      "motion_type": "Major Movement",
+      "motion_score": 0.5182,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.929,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 1,
+      "timestamp_start": 0.888,
+      "timestamp_end": 2.356,
+      "motion_type": "Major Movement",
+      "motion_score": 0.5509,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.88,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 2,
+      "timestamp_start": 1.655,
+      "timestamp_end": 3.0,
+      "motion_type": "Major Movement",
+      "motion_score": 0.5868,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.807,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 3,
+      "timestamp_start": 2.356,
+      "timestamp_end": 3.68,
+      "motion_type": "Major Movement",
+      "motion_score": 0.6218,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.661,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 4,
+      "timestamp_start": 3.0,
+      "timestamp_end": 4.444,
+      "motion_type": "Major Movement",
+      "motion_score": 0.6374,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.677,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 5,
+      "timestamp_start": 3.68,
+      "timestamp_end": 5.18,
+      "motion_type": "Major Movement",
+      "motion_score": 0.6021,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.666,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 6,
+      "timestamp_start": 4.448,
+      "timestamp_end": 5.905,
+      "motion_type": "Major Movement",
+      "motion_score": 0.5874,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.659,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 7,
+      "timestamp_start": 5.19,
+      "timestamp_end": 6.609,
+      "motion_type": "Major Movement",
+      "motion_score": 0.5802,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.787,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 8,
+      "timestamp_start": 5.906,
+      "timestamp_end": 7.283,
+      "motion_type": "Major Movement",
+      "motion_score": 0.5973,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.836,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 9,
+      "timestamp_start": 6.613,
+      "timestamp_end": 8.006,
+      "motion_type": "Turning",
+      "motion_score": 0.6508,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.729,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 10,
+      "timestamp_start": 7.3,
+      "timestamp_end": 8.714,
+      "motion_type": "Turning",
+      "motion_score": 0.6702,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.59,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 11,
+      "timestamp_start": 8.021,
+      "timestamp_end": 9.42,
+      "motion_type": "Turning",
+      "motion_score": 0.6587,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.712,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 12,
+      "timestamp_start": 8.718,
+      "timestamp_end": 10.11,
+      "motion_type": "Major Movement",
+      "motion_score": 0.633,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.828,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 13,
+      "timestamp_start": 9.421,
+      "timestamp_end": 10.801,
+      "motion_type": "Major Movement",
+      "motion_score": 0.6185,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.863,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 14,
+      "timestamp_start": 10.114,
+      "timestamp_end": 11.493,
+      "motion_type": "Major Movement",
+      "motion_score": 0.6139,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.86,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 15,
+      "timestamp_start": 10.805,
+      "timestamp_end": 12.18,
+      "motion_type": "Major Movement",
+      "motion_score": 0.6096,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.847,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 16,
+      "timestamp_start": 11.493,
+      "timestamp_end": 12.864,
+      "motion_type": "Major Movement",
+      "motion_score": 0.6071,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.847,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 17,
+      "timestamp_start": 12.181,
+      "timestamp_end": 13.513,
+      "motion_type": "Major Movement",
+      "motion_score": 0.6154,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.787,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 18,
+      "timestamp_start": 12.866,
+      "timestamp_end": 14.178,
+      "motion_type": "Major Movement",
+      "motion_score": 0.6265,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.804,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 19,
+      "timestamp_start": 13.515,
+      "timestamp_end": 14.818,
+      "motion_type": "Major Movement",
+      "motion_score": 0.6368,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.866,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 20,
+      "timestamp_start": 14.182,
+      "timestamp_end": 15.466,
+      "motion_type": "Major Movement",
+      "motion_score": 0.6429,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.892,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 21,
+      "timestamp_start": 14.818,
+      "timestamp_end": 16.116,
+      "motion_type": "Major Movement",
+      "motion_score": 0.6296,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.902,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 22,
+      "timestamp_start": 15.47,
+      "timestamp_end": 16.75,
+      "motion_type": "Major Movement",
+      "motion_score": 0.6201,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.918,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 23,
+      "timestamp_start": 16.12,
+      "timestamp_end": 17.406,
+      "motion_type": "Major Movement",
+      "motion_score": 0.6234,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.874,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 24,
+      "timestamp_start": 16.755,
+      "timestamp_end": 18.065,
+      "motion_type": "Major Movement",
+      "motion_score": 0.6305,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.873,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 25,
+      "timestamp_start": 17.41,
+      "timestamp_end": 18.719,
+      "motion_type": "Major Movement",
+      "motion_score": 0.6376,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.858,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 26,
+      "timestamp_start": 18.066,
+      "timestamp_end": 19.339,
+      "motion_type": "Major Movement",
+      "motion_score": 0.6418,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.828,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 27,
+      "timestamp_start": 18.733,
+      "timestamp_end": 19.98,
+      "motion_type": "Major Movement",
+      "motion_score": 0.6415,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.827,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 28,
+      "timestamp_start": 19.34,
+      "timestamp_end": 20.597,
+      "motion_type": "Major Movement",
+      "motion_score": 0.6308,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.898,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 29,
+      "timestamp_start": 19.98,
+      "timestamp_end": 21.237,
+      "motion_type": "Major Movement",
+      "motion_score": 0.6334,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.887,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 30,
+      "timestamp_start": 20.605,
+      "timestamp_end": 21.861,
+      "motion_type": "Major Movement",
+      "motion_score": 0.6472,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.77,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 31,
+      "timestamp_start": 21.238,
+      "timestamp_end": 22.502,
+      "motion_type": "Major Movement",
+      "motion_score": 0.645,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.67,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 32,
+      "timestamp_start": 21.87,
+      "timestamp_end": 23.138,
+      "motion_type": "Major Movement",
+      "motion_score": 0.6406,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.823,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 33,
+      "timestamp_start": 22.508,
+      "timestamp_end": 23.757,
+      "motion_type": "Major Movement",
+      "motion_score": 0.6489,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.856,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 34,
+      "timestamp_start": 23.139,
+      "timestamp_end": 24.385,
+      "motion_type": "Turning",
+      "motion_score": 0.6661,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.799,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 35,
+      "timestamp_start": 23.759,
+      "timestamp_end": 25.03,
+      "motion_type": "Turning",
+      "motion_score": 0.6663,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.727,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 36,
+      "timestamp_start": 24.388,
+      "timestamp_end": 25.654,
+      "motion_type": "Turning",
+      "motion_score": 0.6544,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.799,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 37,
+      "timestamp_start": 25.03,
+      "timestamp_end": 26.3,
+      "motion_type": "Turning",
+      "motion_score": 0.6586,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.775,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 38,
+      "timestamp_start": 25.659,
+      "timestamp_end": 26.937,
+      "motion_type": "Turning",
+      "motion_score": 0.6594,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.749,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 39,
+      "timestamp_start": 26.314,
+      "timestamp_end": 27.59,
+      "motion_type": "Major Movement",
+      "motion_score": 0.6437,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.815,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 40,
+      "timestamp_start": 26.945,
+      "timestamp_end": 28.277,
+      "motion_type": "Major Movement",
+      "motion_score": 0.6328,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.825,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 41,
+      "timestamp_start": 27.602,
+      "timestamp_end": 28.929,
+      "motion_type": "Major Movement",
+      "motion_score": 0.6447,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.802,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 42,
+      "timestamp_start": 28.283,
+      "timestamp_end": 29.561,
+      "motion_type": "Turning",
+      "motion_score": 0.6532,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.812,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 43,
+      "timestamp_start": 28.93,
+      "timestamp_end": 30.215,
+      "motion_type": "Turning",
+      "motion_score": 0.6568,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.829,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 44,
+      "timestamp_start": 29.568,
+      "timestamp_end": 31.195,
+      "motion_type": "Turning",
+      "motion_score": 0.6711,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.687,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 45,
+      "timestamp_start": 30.215,
+      "timestamp_end": 36.86,
+      "motion_type": "Turning",
+      "motion_score": 0.6616,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.7,
+      "associated_sleep_event": "Motion"
+    }
+  ]
+}

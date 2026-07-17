@@ -1,0 +1,17 @@
+epoch_index,timestamp_start,timestamp_end,motion_type,motion_score,posture_label,posture_confidence,associated_sleep_event
+0,0.022,18.421,Major Movement,0.6004,Restless,0.75,Motion
+1,9.356,26.947,Major Movement,0.5806,Restless,0.75,Motion
+2,18.951,36.009,Major Movement,0.4678,Restless,0.75,Motion
+3,27.617,44.617,Minor Movement,0.1862,Still – Normal Breathing,0.85,Motion
+4,36.597,50.68,Still,0.0501,Still – Normal Breathing,0.85,Motion
+5,45.202,56.316,Minor Movement,0.1571,Still – Normal Breathing,0.85,Motion
+6,51.024,63.26,Major Movement,0.3598,Still – Normal Breathing,0.85,Motion
+7,56.705,69.462,Major Movement,0.5091,Still – Normal Breathing,0.85,Motion
+8,63.814,76.676,Major Movement,0.5649,Restless,0.75,Motion
+9,69.964,84.309,Major Movement,0.5875,Restless,0.75,Motion
+10,77.333,92.2,Major Movement,0.5253,Still – Normal Breathing,0.85,Motion
+11,84.821,99.061,Major Movement,0.4445,Still – Normal Breathing,0.85,Motion
+12,92.778,106.636,Major Movement,0.5805,Restless,0.75,Motion
+13,99.613,113.834,Major Movement,0.6155,Restless,0.75,Motion
+14,107.231,120.767,Major Movement,0.5041,Restless,0.75,Motion
+15,114.348,121.211,Minor Movement,0.2094,Still – Normal Breathing,0.85,Motion

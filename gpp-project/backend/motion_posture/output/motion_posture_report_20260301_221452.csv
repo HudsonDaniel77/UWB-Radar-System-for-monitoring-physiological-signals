@@ -1,0 +1,4 @@
+epoch_index,timestamp_start,timestamp_end,motion_type,motion_score,posture_label,posture_confidence,associated_sleep_event
+0,0.06,71.751,Major Movement,0.5563,Unknown,0.846,Motion
+1,36.239,104.166,Major Movement,0.5266,Unknown,0.879,Motion
+2,71.949,121.488,Major Movement,0.5308,Unknown,0.869,Motion

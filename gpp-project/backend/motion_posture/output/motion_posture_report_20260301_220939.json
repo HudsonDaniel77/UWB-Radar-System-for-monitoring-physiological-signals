@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-03-01T22:09:39.946437",
+  "session_stats": {
+    "posture_distribution_pct": {
+      "Unknown": 100.0
+    },
+    "posture_epoch_counts": {
+      "Unknown": 3
+    },
+    "motion_epoch_counts": {
+      "Major Movement": 3
+    },
+    "event_posture_correlation": {
+      "Motion_Unknown": 1
+    },
+    "total_annotations": 1
+  },
+  "event_annotations": [
+    {
+      "event_type": "Motion",
+      "event_start": 0.06,
+      "event_end": 121.488,
+      "posture_during": "Unknown",
+      "motion_before": "N/A",
+      "motion_after": "N/A",
+      "description": "Motion event occurred.",
+      "RR_mean": 0.1069,
+      "HR_mean": 74.5
+    }
+  ],
+  "combined_timeline": [
+    {
+      "epoch_index": 0,
+      "timestamp_start": 0.06,
+      "timestamp_end": 71.751,
+      "motion_type": "Major Movement",
+      "motion_score": 0.5563,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.846,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 1,
+      "timestamp_start": 36.239,
+      "timestamp_end": 104.166,
+      "motion_type": "Major Movement",
+      "motion_score": 0.5266,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.879,
+      "associated_sleep_event": "Motion"
+    },
+    {
+      "epoch_index": 2,
+      "timestamp_start": 71.949,
+      "timestamp_end": 121.488,
+      "motion_type": "Major Movement",
+      "motion_score": 0.5308,
+      "posture_label": "Unknown",
+      "posture_confidence": 0.869,
+      "associated_sleep_event": "Motion"
+    }
+  ]
+}

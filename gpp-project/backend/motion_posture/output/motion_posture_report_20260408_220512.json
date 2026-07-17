@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-04-08T22:05:12.410107",
+  "session_stats": {
+    "posture_distribution_pct": {
+      "Restless": 100.0
+    },
+    "posture_epoch_counts": {
+      "Restless": 1
+    },
+    "motion_epoch_counts": {
+      "Major Movement": 1
+    },
+    "event_posture_correlation": {
+      "Motion_Restless": 3
+    },
+    "total_annotations": 3
+  },
+  "event_annotations": [
+    {
+      "event_type": "Motion",
+      "event_start": 0.02,
+      "event_end": 25.961,
+      "posture_during": "Restless",
+      "motion_before": "N/A",
+      "motion_after": "N/A",
+      "description": "Motion event occurred during Restless posture.",
+      "RR_mean": 0.2552,
+      "HR_mean": 133.33
+    },
+    {
+      "event_type": "Motion",
+      "event_start": 12.067,
+      "event_end": 39.905,
+      "posture_during": "Restless",
+      "motion_before": "N/A",
+      "motion_after": "N/A",
+      "description": "Motion event occurred during Restless posture.",
+      "RR_mean": 0.2696,
+      "HR_mean": 116.56
+    },
+    {
+      "event_type": "Motion",
+      "event_start": 26.45,
+      "event_end": 52.88,
+      "posture_during": "Restless",
+      "motion_before": "N/A",
+      "motion_after": "N/A",
+      "description": "Motion event occurred during Restless posture.",
+      "RR_mean": 0.2037,
+      "HR_mean": 75.98
+    }
+  ],
+  "combined_timeline": [
+    {
+      "epoch_index": 0,
+      "timestamp_start": 0.02,
+      "timestamp_end": 126.246,
+      "motion_type": "Major Movement",
+      "motion_score": 0.5539,
+      "posture_label": "Restless",
+      "posture_confidence": 0.75,
+      "associated_sleep_event": "Motion"
+    }
+  ]
+}

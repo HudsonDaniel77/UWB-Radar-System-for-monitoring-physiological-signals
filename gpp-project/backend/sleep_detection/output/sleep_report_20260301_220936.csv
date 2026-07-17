@@ -1,0 +1,2 @@
+epoch_index,timestamp_start,timestamp_end,event_type,RR_mean,RR_std,amplitude,motion_score_mean,HR_mean
+0,0.06,121.488,Motion,0.1069,0.1175,0.9769,0.0906,74.5

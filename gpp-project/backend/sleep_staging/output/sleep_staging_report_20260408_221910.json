@@ -1,0 +1,169 @@
+{
+  "generated_at": "2026-04-08T22:19:10.561271",
+  "sleep_structure": {
+    "total_epochs": 4,
+    "total_duration_sec": 120,
+    "total_duration_min": 2.0,
+    "time_per_stage_sec": {
+      "Wake": 60,
+      "REM": 0,
+      "Light": 30,
+      "Deep": 30
+    },
+    "pct_per_stage": {
+      "Wake": 50.0,
+      "REM": 0.0,
+      "Light": 25.0,
+      "Deep": 25.0
+    },
+    "stage_counts": {
+      "Wake": 2,
+      "Light": 1,
+      "Deep": 1
+    },
+    "sleep_efficiency": 0.5,
+    "sleep_efficiency_pct": 50.0,
+    "efficiency_rating": "Poor",
+    "sleep_onset_latency_sec": 60,
+    "rem_episodes": 0
+  },
+  "metrics": {
+    "accuracy": 1.0,
+    "precision_macro": 1.0,
+    "recall_macro": 1.0,
+    "f1_macro": 1.0,
+    "cohens_kappa": 1.0,
+    "per_class_f1": {
+      "Wake": 1.0,
+      "REM": 1.0,
+      "Light": 1.0,
+      "Deep": 1.0
+    },
+    "confusion_matrix": [
+      [
+        120,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        120,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        120,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        120
+      ]
+    ],
+    "classification_report": {
+      "Wake": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 120.0
+      },
+      "REM": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 120.0
+      },
+      "Light": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 120.0
+      },
+      "Deep": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 120.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 480.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 480.0
+      }
+    },
+    "roc_auc_macro": 1.0,
+    "roc_auc_per_class": {
+      "Wake": 1.0,
+      "REM": 1.0,
+      "Light": 1.0,
+      "Deep": 1.0
+    }
+  },
+  "epoch_records": [
+    {
+      "epoch_index": 0,
+      "timestamp_start": 0.017,
+      "timestamp_end": 32.426,
+      "predicted_stage": "Wake",
+      "confidence": 0.9672,
+      "probabilities": {
+        "Wake": 0.9672,
+        "REM": 0.0109,
+        "Light": 0.0109,
+        "Deep": 0.0109
+      }
+    },
+    {
+      "epoch_index": 1,
+      "timestamp_start": 32.748,
+      "timestamp_end": 67.297,
+      "predicted_stage": "Wake",
+      "confidence": 0.55,
+      "probabilities": {
+        "Wake": 0.55,
+        "REM": 0.15,
+        "Light": 0.15,
+        "Deep": 0.15
+      }
+    },
+    {
+      "epoch_index": 2,
+      "timestamp_start": 67.551,
+      "timestamp_end": 96.726,
+      "predicted_stage": "Light",
+      "confidence": 0.65,
+      "probabilities": {
+        "Wake": 0.1167,
+        "REM": 0.1167,
+        "Light": 0.65,
+        "Deep": 0.1167
+      }
+    },
+    {
+      "epoch_index": 3,
+      "timestamp_start": 96.97,
+      "timestamp_end": 119.897,
+      "predicted_stage": "Deep",
+      "confidence": 0.55,
+      "probabilities": {
+        "Wake": 0.15,
+        "REM": 0.15,
+        "Light": 0.15,
+        "Deep": 0.55
+      }
+    }
+  ]
+}

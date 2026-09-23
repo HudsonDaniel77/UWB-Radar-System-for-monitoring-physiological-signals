@@ -32,13 +32,13 @@ except:
 CONFIG_STR = "front" if CONFIG_TYPE == 0 else "back"
 
 # ================= CONFIG =================
-USER_PORT = "COM5"
-DATA_PORT = "COM6"
+USER_PORT = "COM13"
+DATA_PORT = "COM12"
 USER_BAUD = 115200
 DATA_BAUD = 921600
 
-FRONT_CFG = r"C:\Users\Nikhil\Downloads\mmwave_industrial_toolbox_4_12_1\labs\Vital_Signs\68xx_vital_signs\gui\profiles\xwr68xx_profile_VitalSigns_20fps_Front.cfg"
-BACK_CFG  = r"C:\Users\Nikhil\Downloads\mmwave_industrial_toolbox_4_12_1\labs\Vital_Signs\68xx_vital_signs\gui\profiles\xwr68xx_profile_VitalSigns_20fps_Back.cfg"
+FRONT_CFG = r"C:\ti\mmwave_industrial_toolbox_4_12_1\labs\Vital_Signs\68xx_vital_signs\gui\profiles\xwr68xx_profile_VitalSigns_20fps_Front.cfg"
+BACK_CFG  = r"C:\ti\mmwave_industrial_toolbox_4_12_1\labs\Vital_Signs\68xx_vital_signs\gui\profiles\xwr68xx_profile_VitalSigns_20fps_Front.cfg"
 CFG_FILE = FRONT_CFG if CONFIG_TYPE == 0 else BACK_CFG
 
 FPS = 20

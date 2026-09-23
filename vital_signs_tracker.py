@@ -3,6 +3,7 @@ import time
 import struct
 import csv
 import datetime
+import os
 import matplotlib
 matplotlib.use("TkAgg")
 import matplotlib.pyplot as plt
@@ -10,14 +11,14 @@ import matplotlib.pyplot as plt
 # -----------------------------
 # User Configurations
 # -----------------------------
-USER_PORT = 'COM5'  # User/config UART
-DATA_PORT = 'COM6'  # Data UART
+USER_PORT = 'COM13'  # User/config UART
+DATA_PORT = 'COM12'  # Data UART
 USER_BAUD = 115200
 DATA_BAUD = 921600
 CFG_FILE = r"C:\ti\mmwave_industrial_toolbox_4_12_1\labs\Vital_Signs\68xx_vital_signs\gui\profiles\xwr68xx_profile_VitalSigns_20fps_Front.cfg"
 
 DURATION = 10  # seconds
-CSV_DIR = r"C:\Users\Nikhil\Downloads\SSN\College Files\Grand Project\RespirationHealth"
+CSV_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # CALIBRATION SETTINGS
 # If range reads too high, increase RANGE_OFFSET (negative value)

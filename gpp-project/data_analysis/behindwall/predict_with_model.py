@@ -6,7 +6,7 @@ import json
 import sys
 
 # Behind-Wall enhanced prediction model (14 features)
-BASE_DIR = r"C:\Users\Nikhil\Downloads\SSN\College Files\Grand Project\RespirationHealth\gpp-project\data_analysis\behindwall"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 FINAL_STATS_FILE = os.path.join(BASE_DIR, "final_run_stats_new.csv")
 

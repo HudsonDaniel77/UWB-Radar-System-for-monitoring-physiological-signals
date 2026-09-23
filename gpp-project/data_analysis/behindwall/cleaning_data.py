@@ -7,11 +7,15 @@ import re
 # ==========================================================
 # PATHS  (Behind-Wall cleaning pipeline)
 # ==========================================================
-RAW_FILE = r"C:\Users\Nikhil\Downloads\SSN\College Files\Grand Project\RespirationHealth\gpp-project\backend\vital_signs_data_new.csv"
-CLEAN_FILE = r"C:\Users\Nikhil\Downloads\SSN\College Files\Grand Project\RespirationHealth\gpp-project\data_analysis\behindwall\cleaned_vital_signs_new.csv"
-COMPARISON_FILE = r"C:\Users\Nikhil\Downloads\SSN\College Files\Grand Project\RespirationHealth\gpp-project\data_analysis\behindwall\VariousData.csv"
-OFFSET_FILE = r"C:\Users\Nikhil\Downloads\SSN\College Files\Grand Project\RespirationHealth\gpp-project\data_analysis\behindwall\calibration_offsets.json"
-FINAL_STATS_FILE = r"C:\Users\Nikhil\Downloads\SSN\College Files\Grand Project\RespirationHealth\gpp-project\data_analysis\behindwall\final_run_stats_new.csv"
+BW_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(os.path.dirname(BW_DIR))
+BACKEND_DIR = os.path.join(PROJECT_ROOT, "backend")
+
+RAW_FILE = os.path.join(BACKEND_DIR, "vital_signs_data_new.csv")
+CLEAN_FILE = os.path.join(BW_DIR, "cleaned_vital_signs_new.csv")
+COMPARISON_FILE = os.path.join(BW_DIR, "VariousData.csv")
+OFFSET_FILE = os.path.join(BW_DIR, "calibration_offsets.json")
+FINAL_STATS_FILE = os.path.join(BW_DIR, "final_run_stats_new.csv")
 
 os.makedirs(os.path.dirname(FINAL_STATS_FILE), exist_ok=True)
 

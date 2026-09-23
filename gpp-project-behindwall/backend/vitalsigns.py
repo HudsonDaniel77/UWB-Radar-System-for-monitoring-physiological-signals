@@ -57,13 +57,13 @@ CFG_FILE = FRONT_CFG if CONFIG_TYPE == 0 else BACK_CFG
 # -----------------------------
 # Serial / user config
 # -----------------------------
-USER_PORT = 'COM11'
-DATA_PORT = 'COM10'
+USER_PORT = 'COM13'
+DATA_PORT = 'COM12'
 USER_BAUD = 115200
 DATA_BAUD = 921600
 
 DURATION = 30  # seconds - adjust as needed
-CSV_DIR = r"C:\Users\Nikhil\Downloads\SSN\College Files\Grand Project\RespirationHealth\gpp-project-behindwall\backend"
+CSV_DIR = os.path.dirname(os.path.abspath(__file__))
 
 MASTER_CSV = os.path.join(CSV_DIR, "vital_signs_data_new.csv")
 

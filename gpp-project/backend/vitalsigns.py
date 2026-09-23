@@ -14,8 +14,8 @@ CONFIG_TYPE = int(sys.argv[2]) if len(sys.argv) > 2 else 0
 RUN_TIME    = int(sys.argv[3]) if len(sys.argv) > 3 else 30  # seconds; override via argv[3]
 
 # ================= CONFIG =================
-USER_PORT = "COM5"
-DATA_PORT = "COM6"
+USER_PORT = "COM13"
+DATA_PORT = "COM12"
 USER_BAUD = 115200
 DATA_BAUD = 921600
 
@@ -28,7 +28,7 @@ CFG_BASE = os.path.join(
     "68xx_vital_signs", "gui", "profiles"
 )
 if not os.path.isdir(CFG_BASE):          # fallback to TI installation in Downloads
-    CFG_BASE = r"C:\Users\Nikhil\Downloads\mmwave_industrial_toolbox_4_12_1\labs\Vital_Signs\68xx_vital_signs\gui\profiles"
+    CFG_BASE = r"C:\ti\mmwave_industrial_toolbox_4_12_1\labs\Vital_Signs\68xx_vital_signs\gui\profiles"
 
 CFG_FILES = {
     0: os.path.join(CFG_BASE, "xwr68xx_profile_VitalSigns_20fps_Front.cfg"),
@@ -353,8 +353,21 @@ while time.time() - start < RUN_TIME:
 # ================= SEND FINAL STATS TO FRONTEND =================
 stats_lines = []
 
+def dealias_hr_list(hr_list):
+    if not hr_list:
+        return hr_list
+    arr = np.array(hr_list, dtype=float)
+    low_c = arr[(arr >= 50) & (arr <= 95)]
+    high_c = arr[(arr >= 115) & (arr <= 150)]
+    if len(low_c) > 0 and len(high_c) > 0:
+        arr[(arr >= 115) & (arr <= 150)] /= 2.0
+    elif len(high_c) == len(arr):
+        arr /= 2.0
+    return arr.tolist()
+
 if final_hr:
-    avg_hr = sum(final_hr) / len(final_hr)
+    clean_final_hr = dealias_hr_list(final_hr)
+    avg_hr = sum(clean_final_hr) / len(clean_final_hr)
     avg_rr = sum(final_rr) / len(final_rr)
 
     stats_lines.append(f"Average Heart Rate  : {avg_hr:.1f} bpm")
@@ -383,12 +396,14 @@ try:
         waveform_data["chest"] = densify(chest_wave).tolist()
     if len(combined) > 0:
         waveform_data["combined"] = densify(combined).tolist()
-    waveform_data["hr_text"] = f"{np.mean(hr_vals[-10:]):.1f}" if hr_vals else "--"
+
+    dealiased_hr_vals = dealias_hr_list(hr_vals)
+    waveform_data["hr_text"] = f"{np.mean(dealiased_hr_vals[-10:]):.1f}" if dealiased_hr_vals else "--"
     waveform_data["rr_text"] = f"{np.mean(rr_vals[-10:]):.1f}" if rr_vals else "--"
     
     # Add vital signs arrays and timestamps for live graphing (the graphpaper chart)
     if len(hr_vals) > 0:
-        waveform_data["hr_vals"] = hr_vals
+        waveform_data["hr_vals"] = dealiased_hr_vals
         waveform_data["rr_vals"] = rr_vals
         # Generate timestamps based on FPS (assume ~1.68 Hz actual sampling)
         timestamps = [i / FPS for i in range(len(hr_vals))]
@@ -407,7 +422,10 @@ user.close()
 data.close()
 csv_file.close()
 plt.ioff()
-plt.show()
+try:
+    plt.close('all')
+except Exception:
+    pass
 
 print("\nCSV saved to:", SESSION_CSV)
 

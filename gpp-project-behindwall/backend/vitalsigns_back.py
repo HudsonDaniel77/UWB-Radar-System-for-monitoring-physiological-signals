@@ -12,14 +12,14 @@ import os
 # -----------------------------
 # User Configurations
 # -----------------------------
-USER_PORT = 'COM11'
-DATA_PORT = 'COM10'
+USER_PORT = 'COM13'
+DATA_PORT = 'COM12'
 USER_BAUD = 115200
 DATA_BAUD = 921600
 CFG_FILE = r"C:\ti\mmwave_industrial_toolbox_4_12_1\labs\Vital_Signs\68xx_vital_signs\gui\profiles\xwr68xx_profile_VitalSigns_20fps_Back.cfg"
 
 DURATION = 30  # seconds
-CSV_DIR = r"C:\Project\RespirationHealth-main - Copy\gpp-project\backend"
+CSV_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Single CSV file for all data
 MASTER_CSV = f"{CSV_DIR}\\vital_signs_data_new.csv"

@@ -5,8 +5,8 @@ from scipy.signal import butter, filtfilt, detrend
 from matplotlib.ticker import MultipleLocator
 
 # ================= CONFIG =================
-USER_PORT = "COM5"
-DATA_PORT = "COM6"
+USER_PORT = "COM13"
+DATA_PORT = "COM12"
 USER_BAUD = 115200
 DATA_BAUD = 921600
 

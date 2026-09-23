@@ -104,10 +104,11 @@ def run_sensor():
             })
 
         # ----------------------------------------------------
-        # 2️⃣ EXTRACT STATS TEXT (ROBUST)
+        # 2️⃣ EXTRACT STATS TEXT & SESSION CSV PATH
         # ----------------------------------------------------
         stats_text = "No stats returned."
         waveform_data = {}
+        session_csv_path = None
 
         if "STATS_BEGIN" in stdout and "STATS_END" in stdout:
             try:
@@ -119,29 +120,35 @@ def run_sensor():
             except Exception as e:
                 stats_text = f"Stats parsing failed: {str(e)}"
 
+        if "CSV_PATH_BEGIN" in stdout and "CSV_PATH_END" in stdout:
+            try:
+                session_csv_path = stdout.split("CSV_PATH_BEGIN", 1)[1].split("CSV_PATH_END", 1)[0].strip()
+            except Exception:
+                session_csv_path = None
+
         # ----------------------------------------------------
         # 3️⃣ CLEANING (FRAME-LEVEL)
         # ----------------------------------------------------
-        subprocess.run(
-            [sys.executable, CLEAN_SCRIPT],
-            check=True
-        )
+        clean_cmd = [sys.executable, CLEAN_SCRIPT]
+        if session_csv_path and os.path.exists(session_csv_path):
+            clean_cmd.append(session_csv_path)
+        subprocess.run(clean_cmd, check=True)
 
         # ----------------------------------------------------
         # 4️⃣ CALIBRATION (RUN-LEVEL → FINAL STATS CSV)
         # ----------------------------------------------------
-        subprocess.run(
-            [sys.executable, CALIBRATION_SCRIPT],
-            check=True
-        )
+        cal_cmd = [sys.executable, CALIBRATION_SCRIPT]
+        if session_csv_path and os.path.exists(session_csv_path):
+            cal_cmd.append(session_csv_path)
+        subprocess.run(cal_cmd, check=True)
 
         # ----------------------------------------------------
         # 5️⃣ ML INFERENCE
         # ----------------------------------------------------
-        raw_output = subprocess.check_output(
-            [sys.executable, MODEL_SCRIPT],
-            text=True
-        ).strip()
+        model_cmd = [sys.executable, MODEL_SCRIPT]
+        if session_csv_path and os.path.exists(session_csv_path):
+            model_cmd.append(session_csv_path)
+        raw_output = subprocess.check_output(model_cmd, text=True).strip()
 
         try:
             ml_results = json.loads(raw_output)
@@ -172,17 +179,27 @@ def run_sensor():
 @app.post("/run_pipeline")
 def run_pipeline():
     try:
-        subprocess.run([sys.executable, CLEAN_SCRIPT], check=True)
-        subprocess.run([sys.executable, CALIBRATION_SCRIPT], check=True)
+        import glob
+        session_files = glob.glob(os.path.join(BACKEND_DIR, "vital_signs_session_*.csv"))
+        latest_sess = max(session_files, key=os.path.getmtime) if session_files else None
 
-        raw_output = subprocess.check_output(
-            [sys.executable, MODEL_SCRIPT],
-            text=True
-        ).strip()
+        clean_cmd = [sys.executable, CLEAN_SCRIPT]
+        cal_cmd = [sys.executable, CALIBRATION_SCRIPT]
+        model_cmd = [sys.executable, MODEL_SCRIPT]
+
+        if latest_sess and os.path.exists(latest_sess):
+            clean_cmd.append(latest_sess)
+            cal_cmd.append(latest_sess)
+            model_cmd.append(latest_sess)
+
+        subprocess.run(clean_cmd, check=True)
+        subprocess.run(cal_cmd, check=True)
+
+        raw_output = subprocess.check_output(model_cmd, text=True).strip()
 
         try:
             ml_results = json.loads(raw_output)
-        except:
+        except Exception:
             ml_results = {"raw_output": raw_output}
 
         return jsonify({

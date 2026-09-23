@@ -26,16 +26,20 @@ ChartJS.register(
 function ErrorPopup({ message, onClose, title = "Message" }) {
   if (!message) return null;
 
+  const isProcessing = title === "Processing...";
+  const isSuccess = title.toLowerCase().includes("summary") || title.toLowerCase().includes("success");
+  const titleColor = isProcessing ? "text-cyan-400" : isSuccess ? "text-emerald-400" : "text-red-400";
+
   return (
     <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 backdrop-blur-sm">
       <div className="bg-[#0f0f0f] border border-gray-700 rounded-2xl p-6 max-w-md w-[90%] text-gray-200 shadow-2xl shadow-black/70">
 
-        <h2 className="text-2xl font-bold mb-4 text-red-400 text-center">
+        <h2 className={`text-2xl font-bold mb-4 text-center ${titleColor}`}>
           {title}
         </h2>
 
         <p 
-          className="mb-6 leading-relaxed whitespace-pre-wrap text-gray-200"
+          className="mb-6 leading-relaxed whitespace-pre-wrap text-gray-200 text-sm font-mono"
           style={{
             maxHeight: "300px",
             overflowY: "auto",
@@ -53,7 +57,7 @@ function ErrorPopup({ message, onClose, title = "Message" }) {
             className="px-6 py-2 border border-gray-600 rounded-lg text-gray-200 transition outline-none ring-0 
                        focus:ring-0 hover:bg-[#1a1a1a] hover:border-gray-400 hover:text-white"
           >
-            Close
+            {isProcessing ? "Cancel" : "Close & View Dashboard"}
           </button>
         </div>
 
@@ -103,9 +107,19 @@ const handleRunSensor = () => {
     return;
   }
 
-  // 🔥 Show processing popup IMMEDIATELY
+  // 🔥 Show processing popup with live countdown
   setPopupTitle("Processing...");
-  setPopupMessage("Starting sensor...\nCollecting data...\nCleaning...\nCalibrating...\nExtracting Features...\nAnalysing Data...");
+  setPopupMessage(`📡 Initializing Radar Sensor on COM13/COM12...\n\nPreparing vital signs monitoring session...`);
+
+  let elapsed = 0;
+  const timer = setInterval(() => {
+    elapsed++;
+    if (elapsed < 30) {
+      setPopupMessage(`📡 Radar Recording Active (${30 - elapsed}s remaining)\n\n• Status: Measuring vital signs...\n• Ports: User COM13 | Data COM12\n• Capturing micro-doppler chest displacement`);
+    } else {
+      setPopupMessage(`⚙️ Radar Recording Completed!\n\n• Sensor has turned off.\n• Cleaning raw signal (outlier removal)...\n• Calculating calibration metrics...\n• Running XGBoost AI inference...\n\nFinalizing dashboard results...`);
+    }
+  }, 1000);
 
   fetch("http://localhost:5002/run-sensor", {
     method: "POST",
@@ -117,6 +131,7 @@ const handleRunSensor = () => {
   })
     .then((res) => res.json())
     .then((data) => {
+      clearInterval(timer);
       if (data.success) {
 
         // ---- SHOW SUMMARY POPUP ----
@@ -145,8 +160,9 @@ const handleRunSensor = () => {
       }
     })
     .catch(() => {
+      clearInterval(timer);
       setPopupTitle("Connection Error!");
-      setPopupMessage("Cannot connect to backend. Run the backend server and try again.");
+      setPopupMessage("Cannot connect to backend. Make sure the pipeline server is running on port 5002.");
     });
 };
 

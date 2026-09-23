@@ -9,7 +9,7 @@ import Statistics from "./pages/Statistics";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 
-import ProtectedRoute from "./components/ProtectedRoute";
+import ProtectedRoute from "./components/protectedroute";
 
 function GPPApp() {
   const location = useLocation();
